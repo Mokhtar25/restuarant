@@ -1,0 +1,70 @@
+
+:root{
+    --primecolor : #4d7c0f;
+}
+
+body, html{
+    min-height: 100%;
+    background-color: whitesmoke;
+    padding: 0 0;
+    margin: 0 0;
+}
+*{
+        transition: all .2s ease-in-out;
+
+}
+nav{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color:var(--primecolor);
+    
+}
+
+button{
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    
+    padding: 16px;
+    background: none;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+button:hover{
+    color: white;
+
+    background-color: #65a30d;
+
+    cursor: pointer;
+    
+}
+button:active{
+    background-color: white;
+
+        transition: all .1s ease-in-out;
+    }
+.footer{
+    position: absolute;
+    bottom: 0%;
+    margin-top: auto;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: var(--primecolor);
+    margin-top: auto;
+    width: 100%;
+    text-justify: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.nav{
+    background: lightblue;
+    font-size: 7rem;
+    text-align: center;
+    text-indent: center;
+    width: 100%;
+    height: 150px;
+}
