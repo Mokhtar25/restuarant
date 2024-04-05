@@ -1,41 +1,49 @@
 
 :root{
-    --primecolor : #4d7c0f;
+    --primecolor : rgba(0,0,0,0.7);
 }
 
 body, html{
-    min-height: 100%;
+    height: 100%;
     background-color: whitesmoke;
+    background-image: url('static/chef.jpg');
     padding: 0 0;
     margin: 0 0;
 }
 *{
-        transition: all .2s ease-in-out;
+        transition: all .1.3s ease-in-out;
 
 }
 nav{
-    height: 7rem;
+    position: sticky;
+    top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color:var(--primecolor);
+    background:var(--primecolor);
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    height: 80px;
     
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
 }
 
 button{
-    border: 3px solid whitesmoke;
+    border: 2px solid whitesmoke;
     border-radius: 5rem;
     
-    padding: 16px;
+    padding: 10px;
     background: none;
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 button:hover{
     color: white;
 
-    background-color: #65a30d;
+    background-color: gray;
 
     cursor: pointer;
     
@@ -46,9 +54,9 @@ button:active{
         transition: all .1s ease-in-out;
     }
 .footer{
-    position: absolute;
-    bottom: 0%;
-    margin-top: auto;
+    /* position: sticky; */
+    /* bottom: 0%; */
+    /* margin-top: auto; */
     text-align: center;
     height: 4rem;
     line-height: 4rem;
@@ -62,9 +70,69 @@ button:active{
 
 .nav{
     background: lightblue;
-    font-size: 7rem;
+    font-size: 6rem;
     text-align: center;
     text-indent: center;
-    width: 100%;
-    height: 150px;
+    height: 15%;
 }
+
+.about_wrapper{
+    /* background-image: url('static/chef.jpg'); */
+    height: 100%;
+}
+.about_text{
+    display: flex;
+    color:white;
+    background-color: rgb(0,0,0,0.3);
+    align-items: center;
+    justify-self: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+    padding: 15%;
+    padding-top: 10%;
+
+}
+
+
+#content{
+    height: 100%;
+    /* background: url('static/chef.jpg'); */
+}
+
+
+.home_wrapper{
+    height: 50%;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    justify-content: start;
+}
+
+
+h2{
+    padding: 0 0;
+    font-size: 2rem;
+    margin:  0 0;
+    color: white;
+}
+
+p{
+
+    font-size: 1.4rem;
+    color: white;
+    width: 50%;
+}
+
+
+a{
+    color: gray;
+}
+
+
+
+
+
+
+

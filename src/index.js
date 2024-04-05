@@ -8,8 +8,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const main = document.querySelector('#content');
     const home_button = document.querySelector('.home');
     const menu_button = document.querySelector('.menu');
-    const about_button = document.querySelector('.button');
+    const about_button = document.querySelector('.about');
 
+        
+        main.innerHTML = '';
+        let temp = Createhome();
+        main.appendChild(temp);
     home_button.addEventListener('click', ()=>{
         
         main.innerHTML = '';
@@ -17,7 +21,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         main.appendChild(items);
     }) 
 
-    
+    about_button.addEventListener('click', ()=>{
+        main.innerHTML = '';
+        let about_content = CreateAbout();
+        main.appendChild(about_content);
+    })    
 
 
 
