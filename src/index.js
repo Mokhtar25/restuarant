@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         main.appendChild(about_content);
     })    
 
+    menu_button.addEventListener('click', ()=>{
+        main.innerHTML = '';
+
+        let content = CreateMenu();
+        main.appendChild(content);
+    })
+
 
 
 

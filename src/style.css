@@ -54,18 +54,18 @@ button:active{
         transition: all .1s ease-in-out;
     }
 .footer{
-    /* position: sticky; */
-    /* bottom: 0%; */
+    position: relative;
+    bottom: 1%;
     /* margin-top: auto; */
     text-align: center;
     height: 4rem;
     line-height: 4rem;
     background-color: var(--primecolor);
-    margin-top: auto;
     width: 100%;
     text-justify: center;
     color: white;
     font-size: 1.3rem;
+    
 }
 
 .nav{
@@ -95,7 +95,7 @@ button:active{
 
 
 #content{
-    height: 100%;
+    min-height: 100%;
     /* background: url('static/chef.jpg'); */
 }
 
@@ -129,7 +129,29 @@ p{
 a{
     color: gray;
 }
-
+.menu_wrapper{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    padding-top:50px ;
+}
+.card{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    padding-bottom: 50px;
+}
+img{
+    height: 400px;
+    width: 300px;
+    border-radius: 1rem;
+}
+.card .text{
+    width: 40%;
+    color: white;
+    font-size: 1.3rem;
+}
 
 
 
